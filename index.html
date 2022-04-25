@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./slick.css">    
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <div class="navItem">
+                <span><a href="#aboutUs">О нас</a></span>
+            </div>
+            <div class="navItem">
+                <span><a href="#examples">Примеры работ</a></span>
+            </div>
+            <div class="navItem">
+                <span><a href="#order">Заказать</a></span>
+            </div>
+            <div class="navItem">
+                <span><a href="#delivery">Доставка</a></span>
+            </div>
+        </nav>
+
+        <div class="contacts">
+            <span>+0-000-000-00-00</span>
+        </div>
+    </div>
+    <div class="discription">
+        <img src="./img/logo1.png" alt="" class="discriptionLogo">
+        <div class="discriptionText" id="aboutUs">
+            <h1>Приветствуем вас!</h1>
+            <p>
+                Мы, творческая мастерская "WoodArts"
+                Делаем для вас блокноты и портреты из натурального дерева.</p>
+            <img src="./img/discription.png" alt="">
+        </div>
+    </div>
+    <div class="examples">
+        <h2>Примеры работ</h2>
+        <div class="examplesContainer" id="examples">
+            <div class="example_item">
+                <img src="./img/1.png" class="minimized" alt="" >
+            </div>
+            <div class="example_item">
+                <img src="./img/2.png" class="minimized" alt="" >
+            </div>
+            <div class="example_item">
+                <img src="./img/3.png" class="minimized" alt="" >
+            </div>
+            <div class="example_item">
+                <img src="./img/4.png" class="minimized vertica" alt="" >
+            </div>
+            <div class="example_item">
+                <img src="./img/5.png" class="minimized vertica" alt="" >
+            </div>
+            <div class="example_item">
+                <img src="./img/6.png" class="minimized vertica" alt="" >
+            </div>
+            <div class="example_item">
+                <img src="./img/7.png" class="minimized" alt="" >
+            </div>
+            <div class="example_item">
+                <img src="./img/8.png" class="minimized vertica " alt="" >
+            </div>
+        </div>
+
+    </div>
+
+    <div class="completed">
+        <div class="completedContainer">
+            <div class="itemType">
+                <div class="ItemTypeRadioGroup">
+                    <input id="picture" type="radio" name="itemType" value="1" checked>
+                    <label for="picture"><button class="buttonPicture" onmousedown="targetPicture()"></button>Картина</label>
+                </div>
+                <div class="ItemTypeRadioGroup">
+                    <input id="portrait" type="radio" name="itemType" value="1">
+                    <label for="portrait"><button class="buttonPortrait" onmousedown="targetPortrait()"></button>Портрет</label>
+                </div>
+                <div class="ItemTypeRadioGroup">
+                    <input id="cutaway" type="radio" name="itemType" value="1" disabled>
+                    <label for="cutaway">Визитка</label>
+                </div>
+            </div>
+            <div class="itemSize">
+                <span>Размер: </span>
+                <select name="itemTypeSelect" id="" size="1">
+                    <option>100x100 см</option>
+                    <option>100x120 см</option>
+                    <option>100x150 см</option>
+                </select>
+            </div>
+
+            <h2>Готовые решения</h2>
+            <button class="completedOrder"><a href="#openModal" class="modalComplete">Заказать</a></button>
+        </div>
+        <div class="completedExamples" id="activePicture">
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem pictureItem">
+                <img src="./img/1.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem" >
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem" >
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div>
+            <div class="completedItem portraitItem">
+                <img src="./img/2.png" alt="" class="minimized">
+            </div> 
+        </div>
+    </div>
+
+    <div class="personalOrder" id="order">
+        <h2>На заказ</h2>
+        <div class="personalOrderContainer">
+            <div class="exampleContainer">
+               <div class="exampleBorder">
+                   <div class="cropImg"></div>
+               </div>
+            </div>
+            <div class="options">
+                    <div class="optionsItemType">
+                        <div class="itemTypePersonal">
+                            <div class="ItemTypeRadioGroupPersonal">
+                                <input id="personalPicture" type="radio" name="itemTypePersonal" value="1" checked>
+                                <label for="personalPicture">Картина</label>
+                            </div>
+                            <div class="ItemTypeRadioGroupPersonal">
+                                <input id="personalPortrait" type="radio" name="itemTypePersonal" value="1">
+                                <label for="personalPortrait">Портрет</label>
+                            </div>
+                            <div class="ItemTypeRadioGroupPersonal">
+                                <input id="personalCutaway" type="radio" name="itemTypePersonal" value="1" disabled>
+                                <label for="personalCutaway">Визитка</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemSizePersonal">
+                        <span>Размер: </span>
+                        <select name="itemTypeSelect" id="" size="1">
+                            <option>100x100 см</option>
+                            <option>100x120 см</option>
+                            <option>100x150 см</option>
+                        </select>
+                        <button class="completedOrder"><a href="#openModal" class="modalComplete">Заказать</a></button>
+                        
+                    </div>
+                <div class="optionsRequirements">1.Изображение должно быть не меньше 1000x1000 писелей.<br> 2.Изображение должно быть светлым.<br> 3.Формат картинки Jpeg,Png</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="delivery" id="delivery">
+        <h2 class="deliveryHead">Условия доставки</h2>
+        <div class="deliveryDiscription">
+            <div class="deliveryImg"> <img src="./img/delivery.png"></div>
+            <h2>Почта россии</h2>
+        
+            <p>Стоимость доставки от 300 руб. это средняя стоимость доставки по центральной России. Сумма может быть как меньше, так и больше! Точный тариф доставки в ваш город мы сообщим после оформления заказа!  ВНИМАНИЕ: С 1 июня 2018 года бесплатное хранение посылок в отделениях почты России 15 дней! (вместо 30 дней)</p>
+        <h2>СДЕК</h2>
+        <p>Стоимость доставки от 300 руб.   Оставьте заявку на нашу продукцию, мы рассчитаем стоимость доставки.  Доставка до ТК — бесплатно!  Отгрузка заказов через Сдек  каждый день.</p>
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerItem contact">
+            <h2>Контакты</h2>
+            <div class="footerContainer">
+                <img class="logo" src="./img/VK.png">
+                <p>vk.com/testestets/</p>
+            </div>
+            <div class="footerContainer">
+                <img class="logo" src="./img/viber.png">
+                <p>+0-000-00-000-000</p>
+            </div>
+            <div class="footerContainer">
+                <img class="logo" src="./img/whatsapp.png">
+                <p>+0-000-00-000-000</p>
+            </div>
+        </div>
+        <div class="footerItem">
+            <h2>Адрес</h2>
+            <p class="adress">ИП Притуляк В.В. Краснодарский край, ст. Северская ул. Рождественская 5 (ТЕСТ)</p>
+        </div>
+        <div class="footerItem">
+            <h2>Электронная почта</h2>
+            <p class="adress">test@mail.ru</p>
+        </div>
+        <div class="footerItem"></div>
+        <div class="footerItem"></div>
+    </div>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Офомление заказа</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">    
+              <p>Введите ваши данные, мы позвоним для уточнения заказа.</p>
+              <form action="" class="orderDetals">
+                    <div class="orderDetalsNames">
+                        <span><span class="impontant">*</span>Имя: </span>
+                        <span><span class="impontant"></span>Фамилия: </span>
+                        <span><span class="impontant">*</span>Номер телефона: </span>
+                        <span><span class="impontant"></span>Email: </span>
+                    </div>
+                    <div class="orderDetalsInput">
+                        <input type="text">            
+                        <input type="text">
+                        <input type="text" name="" id="phone">
+                        <input type="text" name="">
+                    </div>
+              </form>
+              <button class="completedOrder"> Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/test.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+</body>
+</html>
